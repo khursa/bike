@@ -1,0 +1,178 @@
+body {
+  background-color: #000000;
+}
+
+.contactsheader {
+  background-image: url(../img/contacts-header.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.contacts__block {
+  position: relative;
+	height: 1530px;
+	padding-top: 121px;
+  background-image: url(../img/contacts-mainbg.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.contacts__box {
+  width: 1090px;
+  margin: 0 auto;
+  padding: 50px 60px 120px;
+  border: 5px solid #000000;
+  font-style: italic;
+  background-color: #fff798;
+}
+
+.contacts__box--title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contacts__box--text {
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.5px;
+}
+
+.contacts__box--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__box--tel p a {
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1.5px;
+  color: #000000;
+}
+
+.contacts__box--email p a {
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1.5px;
+  color: #000000;
+}
+
+.contact__blocks--form {
+	display: inline-block;
+	height: 100%;
+	background-color: rgb(74, 89, 98);
+	opacity: 0.9;
+}
+
+.contact__blocks--form {
+	position: relative;
+	width: calc(55% - 1%);
+	margin-right: 1%;
+}
+
+.form__fieldset {
+	top: 22px;
+	border: none;
+}
+
+.form__title {
+  padding-top: 140px;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-style: italic;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 1.5px;
+  color: #000000;
+}
+
+.form__fieldset input[type="text"],
+.form__fieldset input[type="email"],
+.form__fieldset textarea {
+	display: block;
+	width: 530px;
+	border: 5px solid #000000;
+	padding-top: 12px;
+	margin: 27px auto;
+	font-family: 'Arial', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 51px;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.form__fieldset textarea {
+  font-style: italic;
+	resize:none;
+}
+
+.form__fieldset input[type="submit"] {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background-color: #d24a43;
+  background-image: none;
+	color: #ffffff;
+	cursor: pointer;
+	transition: 0.4s ease-out;
+  font-style: italic;
+	display: block;
+	width: 530px;
+  height: 73px;
+	border: 5px solid #000000;
+	margin: 27px auto;
+	font-family: 'Arial', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 51px;
+}
+
+.form__fieldset input[type="submit"]:focus {
+  background-color: #bd423c;
+	border: 5px solid #000000;
+}
+
+.form__fieldset input[type="text"]::placeholder,
+.form__fieldset input[type="email"]::placeholder,
+.form__fieldset textarea::placeholder {
+  padding-top: 20px;
+  font-style: italic;
+	color: #000000;
+}
+
+.form__fieldset input:focus,
+.form__fieldset textarea:focus {
+	color: rgba(0, 0, 0, .8);
+  font-style: italic;
+  font-weight: 600;
+	background-color: rgba(255, 255, 255, .75);
+  border: 5px solid transparent;
+}
+
+.form__fieldset input[type="email"]:focus {
+	padding: 24px;
+}
+
+.form__fieldset textarea:focus {
+	color: rgba(0, 0, 0, 1);
+  opacity: 1;
+}
+
+#map {
+ height: 590px;
+ width: 100%;
+ z-index: 99999;
+}

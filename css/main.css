@@ -1,0 +1,264 @@
+@import url(home.css);
+@import url(about.css);
+@import url(gallery.css);
+@import url(contacts.css);
+
+
+/* FONTS */
+@font-face {
+	font-family: 'canstelar';
+	src: url('../fonts/canstelar.eot');
+	src: url('../fonts/canstelar.woff') format('woff'),
+		 url('../fonts/canstelar.ttf') format('truetype'),
+		 url('../fonts/canstelar.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* GETERAL STYLES */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  /* max-width: 1800px; */
+}
+
+header {
+  /* min-width: 1200px; */
+  vertical-align: middle;
+  position: relative;
+  height: 100vh;
+}
+
+.slide {
+	height: 100vh;
+}
+
+.headerslider__leftblock,
+.headerslider__rightblock {
+	display: inline-block;
+	padding-top: 35px;
+}
+
+.headerslider__leftblock {
+	margin-left: 40px;
+}
+
+.headerslider__rightblock {
+	float: right;
+	margin-right: 40px;
+}
+
+h1 {
+	padding: 12px 40px 10px;
+	border: 5px solid #000000;
+	border-radius: 7px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "canstelar", serif;
+  font-style: italic;
+  font-size: 17.82px;
+  font-weight: 400;
+	background: linear-gradient(to left, #C94A4A 30%, #F2C14E 70%, #4D9078);
+  color: #000000;
+}
+
+nav {
+	clear: both;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff0000;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0 193px;
+}
+
+.nav__list--item {
+  display: inline-block;
+  text-align: center;
+  margin: 0 32px;
+}
+
+.nav__list--link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "canstelar", serif;
+  font-style: italic;
+  font-size: 17.82px;
+  font-weight: 400;
+  color: #000000;
+  transition-duration: 0.2s;
+}
+
+.nav__list--link:hover {
+  text-shadow: 0.5px 0.5px 0.8px #000000;
+  color: #ffffff;
+  text-decoration: underline;
+  transition: 0.1s;
+}
+
+.activelink {
+  padding: 12px 19px 10px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background: #b7b7b7;
+}
+
+.activelink:hover {
+  text-shadow: none;
+  color: #000000;
+  text-decoration: none;
+  cursor: default;
+}
+
+section {
+	margin: 0 auto;
+}
+
+footer {
+  height: 342px;
+  border-top: 2px solid #000000;
+  padding: 0 58px;
+  background-color: #888181;
+}
+
+.footer__form {
+  display: inline-block;
+}
+
+.footer__title {
+  margin-top: 43px;
+  font-family: Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  width: 241px;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.footer__input {
+  position: relative;
+  width: 241px;
+  height: 36px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+input[type="email"],
+input[type="submit"] {
+  margin: 0;
+  padding: 9px 0;
+  vertical-align: middle;
+}
+
+input[type="email"] {
+  width: calc(100% - 32px);
+  padding-left: 15px;
+  border: none;
+  font-family: Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input[type="email"]:focus,
+input[type="email"]::placeholder {
+  color: #000000;
+  border: none;
+  line-height: 18px;
+}
+
+input[type="submit"] {
+  width: 18px;
+  height: 18px;
+  padding: 9px;
+  background: #fff url(../img/form-button.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.footer__row--1 {
+  position: relative;
+}
+
+.footer__logo::before {
+  content: '';
+  width: 240px;
+  height: 159px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-30%);
+  background: url(../img/footer-logo.png) no-repeat;
+  z-index: 99999;
+}
+
+.footer__row--2 div {
+  display: inline-block;
+  width: 33%;
+  vertical-align: middle;
+}
+
+.allrights p {
+  font-family: Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.copyright p {
+  text-align: right;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #eae9e9;
+}
+
+.socialicon__list {
+  list-style: none;
+  padding: 0;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.socialicon__item {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+#block,
+.notoverlayicon {
+  display: block;
+}
+
+.overlayicon {
+  display: block;
+  position: relative;
+  top: -36px;
+  transition-duration: 0.2s;
+}
+
+.overlayicon:hover {
+  opacity: 0;
+  transition: 0.2s;
+}
